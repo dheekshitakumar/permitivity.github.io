@@ -21,6 +21,11 @@ h4 {
   color: #5C77AD;
 }
 
+footer {
+  padding-top: 2rem;
+  margin-top: auto;
+}
+
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
