@@ -1,142 +1,192 @@
-<!DOCTYPE HTML>
-<!--
-	Alpha by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Permitivity</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="We use AI to digitize, manage, and automate regulations and the permit application experience to help cities deliver fast and instantly approved building permits."/>
-		<meta property="og:title" content="Permitivity - reducing the time to permit approval" />
-		<meta property="og:description" content="We use AI to digitize, manage, and automate regulations and the permit application experience to help cities deliver fast and instantly approved building permits." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="landing is-preload">
-		<div id="page-wrapper">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-			<!-- Header -->
-				<header id="header" class="alt">
-					<h1><a href="#"><img class="logomiddle" src="images/Logo.svg" alt="Pentagon house outline logo with Permitivity text"/></a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="#">Home</a></li>
-							<!-- <li><a href="team.html">Our Team</a></li> -->
-							<!-- <li>
-								<a href="#">Learn More</a>
-								<ul>
-									<li><a href="cities.html">Cities</a></li>
-									<li><a href="contractors.html">Contractors</a></li>
-								</ul>
-							</li> -->
-							<li><a href="contact.html" class="button">Contact Us</a></li>
-						</ul>
-					</nav>
-				</header>
+    <title>Permitivity</title>
 
-			<!-- Banner -->
-				<section id="banner">
-					<h2><img src="images/Logo.svg" alt="Pentagon house outline logo with Permitivity text" height="120px"/></h2>
-					<p>We use AI to deliver fast and instantly approved building permits for cities and applicants </p>
-					<ul class="actions special">
-						<li><a href="contact.html" class="button primary">Contact Us</a></li>
-						<!-- <li><a href="#learn-more" class="button">Learn More</a></li> -->
-					</ul>
-				</section>
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
-			<!-- Main -->
-				<section id="main" class="container">
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/main.css" rel="stylesheet">
 
-					<section class="box special">
-						<header class="major">
-							<h2> Digitize, manage, and automate 
-							<br />
-							 the permit application experience with AI.</h2>
-							<p> We use augmented and artifical intelligence (AI) to build digital connections between building regulations and the permitting process. </p>
-						</header>
-						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/fhZrdIhBlOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-					</section>
-					<section class="box special features">
-						<div class="features-row">
-							<section>
-								<span class="icon solid major fa-database accent1"></span>
-								<h3>Digital Regulations Management System</h3>
-								<p>Manage the full life-cycle of regulations, from creation to approval to revisions to removals. Not only that, our unique way of creating digital regulations allows us to directly drive workflows in the permit application process.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-brain accent6"></span>
-								<h3>Intelligent Permit Application Generation</h3>
-								<p>Use digital regulations to directly generate an intelligent, dynamic permit intake application that ensures all the information necessary to determine compliance with the regulations is collected from the applicant. Say goodbye to incomplete or incorrect applications!</p>
-							</section>
-						</div>
-						<div class="features-row">
-							<section>
-								<span class="icon solid major fa-clipboard-check accent3"></span>
-								<h3>Digital Pre-Approval Package</h3>
-								<p>The digital pre-approval package significantly cuts the time to do a manual permit review. Given an application ID number, it displays the applicable regulations, displays results of the auto-checked regulations, and brings to the forefront any relevant information for regulations checked manually. </p>
-							</section>
-							<section>
-								<span class="icon solid major fa-search accent4"></span>
-								<h3>APIs for Review Workflows</h3>
-								<p>Based on questions asked in the intelligent permit application form, we can determine which applications require specific reviews and fees. In other words, we expose responses to permit applications, to allow your city to directly drive permit review workflows based on permit application responses. </p>
-							</section>
-						</div>
-					</section>
-					<section id="learn-more">
-						<div class="row">
-							<div class="col-6 col-12-narrower">
-								<section class="box special">
-									<span class="image featured"><img src="images/contractor_image.jpg" alt="" /></span>
-									<h3>Contractors</h3>
-									<p>We expedite the permitting process through digital automation, making it less expensive, easier, and faster to get your commercial and residential permits approved.</p>
-									<!-- <ul class="actions special">
-										<li><a href="contractors.html" class="button alt">Learn More</a></li>
-									</ul> -->
-								</section>
+    <!-- Raleway Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-							</div>
-							<div class="col-6 col-12-narrower">
-								<section class="box special">
-									<span class="image featured"><img src="images/city_image.jpg" alt="" /></span>
-									<h3>Cities / Municipalities</h3>
-									<p>We empower cities to digitize and simplify their permitting process, leading to excellent customer service, quicker permit reviews, and happy constituents.</p>
-									<!-- <ul class="actions special">
-										<li><a href="cities.html" class="button alt">Learn More</a></li>
-									</ul> -->
-								</section>
-							</div>	
-						</div>
-					</section>
-				</section>
+    <!--Navbar scrolled script-->
+    <script>
+      $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        console.log("hi");
+      });
+      });
+    </script>
+  </head>
+
+  <body>
+
+       <nav class="navbar navbar-expand-md fixed-top">
+      <a class="navbar-brand" href="#"><img src="./images/Logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ourNavbar" aria-controls="ourNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="ourNavbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mission">Our Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <span class="my-2 my-md-0 nav-button">
+          <a class="button-primary" href="#contact">Get Started</a>
+        </span>
+      </div>
+    </nav>
 
 
-			<!-- Footer -->
-				<footer id="footer">
-					<!-- <ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-					</ul> -->
-					<ul class="copyright">
-						<li>&copy; Permitivity. All rights reserved.</li>
-					</ul>
-				</footer>
+    
+    <main role="main" class="container text-lg-left text-center">
+      <div id="banner" class="add_margin_left_4rem add_margin_right_4rem">
+        <div class="row justify-content-start add_padding_top_2rem">
+          <div class="col-lg-6 col-md-12 add_padding_top_2rem">
+            <h2 class="gradient add_padding_bottom_1rem">Deliver a fast & seamless <br/> permit application experience</h2>
+            <p class="add_padding_bottom_1rem">Permitivity provides an an end-to-end solution to expedite the permit review process from regulations management to dynamic permit intake forms to automated permit approvals.</p>
+            <a class="button-primary">Learn More</a>
+          </div>
+          <div class="d-none d-lg-block col-lg-6 col-md-12">
+            <img class="img-fluid float-right" src="./images/PermitConfirmation.svg">
+            <!-- <div class="background-circle-1"></div> -->
+          </div>
+        </div>
+      </div>
+      <div id="product" class="add_margin_left_4rem add_margin_right_4rem add_padding_top_1rem add_padding_bottom_1rem">
+        <div class="row justify-content-start add_padding_top_2rem"> 
+          <h3>Our Product has 3 key components</h3>
+        </div>
+        <div class="row justify-content-xs-center justify-content-lg-start add_padding_top_1rem">
+          <div class="col-lg-6 col-md-12">
+            <img class="img-fluid float-left" src="./images/RegulationBuilder.svg" width="1000">
+             <!-- <div class="background-circle-2"></div> -->
+          </div>
+          <div class="col-lg-6 col-md-12 add_padding_top_2rem margin_top_mobile_adj">
+            <h4 class="add_padding_bottom_1rem">Digital Regulations Management System</h3>
+            <p class="add_padding_bottom_1rem">Manage the full life-cycle of regulations, from creation to approval to revisions to removals. Not only that, our unique way of creating digital regulations allows us to directly drive workflows in the permit application process.</p>
+            <p>Key capabilities: </p>
+            <ul class="text-left">
+              <li>Auto-checks all regulations de</li>
+              <li>Smart-filter of regulations by project features</li>
+              <li>View the history of each regulation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-xs-center justify-content-lg-start">
+          <div class="col-12 d-lg-none d-xl-none">
+            <img class="img-fluid float-lg-left float-center" src="./images/RegulationBuilder.svg" width="1000">
+             <!-- <div class="background-circle-3"></div> -->
+          </div>
+          <div class="col-lg-6 col-md-12 add_padding_top_2rem margin_top_mobile_adj">
+            <h4 class="add_padding_bottom_1rem">Dynamic Permit Intake Form</h3>
+            <p class="add_padding_bottom_1rem">Use digital regulations to directly auto-generate an intelligent, dynamic permit intake application that ensures all the information necessary to determine compliance with the regulations is collected from the applicant. Say goodbye to incomplete or incorrect applications!</p>
+            <p>Key capabilities: </p>
+            <ul class="text-left">
+              <li>Only shows applicant relevant questions based on previous answers</li>
+              <li>Questions are directly linked to each regulation for full-transparency</li>
+              <li>Provides live feedback on compliance with regulations</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 d-none d-lg-block">
+            <video class="img-fluid float-lg-right float-center" src="./images/OpenLoopClip.mp4" width="90%" autoplay muted loop>
+             <!-- <div class="background-circle-3"></div> -->
+          </div>
+        </div>
+        <div class="row justify-content-xs-center justify-content-lg-start add_padding_top_1rem">
+          <div class="col-lg-6 col-md-12">
+            <video class="img-fluid float-lg-left float-center" src="./images/AutoCheckClip.mp4" width="90%" autoplay muted loop>
+             <!-- <div class="background-circle-4"></div> -->
+          </div>
+          <div class="col-lg-6 col-md-12 add_padding_top_2rem margin_top_mobile_adj">
+            <h4 class="add_padding_bottom_1rem">Auto-checked Permit Application</h3>
+            <p class="add_padding_bottom_1rem">Our software can automatically check and issue a permit. In cases where a manual review is required, we automatically generate a digital pre-approval package that significantly cuts the time to do a manual permit review.</p>
+            <p>Key capabilities: </p>
+            <ul class="text-left">
+              <li>Calculate and display all applicable regulations</li>
+              <li>Display results of all autochecked regulations</li>
+              <li>Provide easy UI to search and parse permit application material</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="mission" class="add_margin_left_4rem add_margin_right_4rem add_padding_top_2rem add_padding_bottom_2rem justify-content-center">
+        <div class="row">
+          <div class="col-lg-7 add_padding_bottom_1rem">
+          <h3 class="add_padding_bottom_1rem">Our Mission</h3>
+          <p>
+           Our mission at Permitivity is to bring down the cost of residential development and enable affordable housing and new sustainability efforts by simplifying the permitting process. Getting a permit is a complicated, expensive, and time-consuming process that can dramatically increase a project's cost and time to completion. Our goal is to reduce the time and cost associated with the permitting process so that we can accelerate the development of the housing and sustainability infrastructure we so desperately need.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <img src="./images/House2Blueprint.svg" class="img-fluid float-lg-right float-center" alt="An Image of a cartoon house where half is constructed and the other half is a blueprint. The image also shows a yellow cartoon construction crawler outside the constructed half of the house.">
+        </div>
+        </div>
+      </div>
+    <div id="contact" class="add_margin_left_4rem add_margin_right_4rem add_padding_top_1rem add_padding_bottom_1rem justify-content-center text-center">
+      <h2 class="gradient add_padding_bottom_1rem">Contact Us</h2>
+      <p class="add_padding_bottom_1rem">We look forward to hearing from you!</p>
+        <form
+          action="https://formspree.io/f/xnqwvblj"
+          method="POST"
+          class="contact-form"
+        >
+        <div class="row">
+          <div class="col-lg-6 col-12 add_padding_top_1rem">
+           <input type="text"  class="form-control" name="name" id="name" value placeholder="Name">
+          </div>
+          <div class="col-lg-6 col-12 add_padding_top_1rem">
+            <input type="email" class="form-control" name="email" id="email" value placeholder="Email"> 
+          </div>
+        </div>
+         <div class="row ">
+          <div class="col-lg-6 col-12 add_padding_top_1rem">
+            <input type="company" class="form-control" name="company" id="company" value placeholder="Company">
+          </div>
+          <div class="col-lg-6 col-12 add_padding_top_1rem">
+           <input type="text"  class="form-control" name="job-title" id="job-title" value placeholder="Job Title">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 add_padding_top_1rem">
+            <textarea name="message"  class="form-control" id="message" placeholder="Enter your message"></textarea>
+          </div>
+        </div>
+          <!-- your other form fields go here -->
+          <div class="add_padding_top_1rem">
+            <button class="button-primary" type="submit">Send</button>
+          </div>
+        </form>
+    </div>
+    </main>
 
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
 </html>
