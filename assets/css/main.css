@@ -4,8 +4,6 @@ html {
 
 body {
   padding-top: 5rem;
-  padding-bottom: 5rem;
-  margin-bottom: 10rem;
   font-family: 'Raleway', sans-serif;
   background-image: url("../../images/Circles.png");
   background-repeat: no-repeat;
@@ -22,8 +20,13 @@ h4 {
 }
 
 footer {
-  padding-top: 2rem;
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  bottom: 0;
 }
 
 .starter-template {
